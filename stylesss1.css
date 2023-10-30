@@ -26,11 +26,11 @@ body, html {
     justify-content: space-between;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;             /* Ensures the navbar stretches the full width of its container */
-    position: fixed;         /* Keeps the navbar fixed at the top, even when scrolling */
-    top: 0;                  /* Positions the navbar at the very top of the page */
-    left: -2;                 /* Positions the navbar starting from the left edge */
-    z-index: 1000;           /* Ensures the navbar appears above other elements on the page */
+    width: 100%;          
+    position: fixed;       
+    top: 0;                 
+    left: -2;                
+    z-index: 1000;          
 }
 
 .hamburger {
@@ -88,25 +88,24 @@ body, html {
     background-color: #0033a0;
 }
 
-/* Previous styles remain unchanged... */
 
 .line1, .line2, .line3 {
     font-family: 'Pridi', serif;
     margin: 0;
     overflow-x: hidden;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    grid-area: line1; /* Using CSS grid */
+    grid-area: line1; 
 }
 
 .line2 {
     grid-area: line2;
-    border-top: 2px solid white; /* Used border for the line instead of dashes */
+    border-top: 2px solid white;
     border-bottom: 2px solid white;
     padding: 20px 0;
 }
 
 .line3 {
-    font-weight: 700; /* Made this line bolder */
+    font-weight: 700; 
     font-size: 2rem;
     grid-area: line3;
 }
@@ -118,8 +117,8 @@ body, html {
     backdrop-filter: blur(5px);
     background-attachment: fixed;
     height: 100vh;
-    display: grid; /* Using CSS grid */
-    grid-template-areas: "content2 frames-container"; /* Defining areas */
+    display: grid; 
+    grid-template-areas: "content2 frames-container"; 
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
@@ -133,8 +132,8 @@ body, html {
     margin: 0;
     padding: 30px;
     color: #fff;
-    grid-area: content2; /* Using CSS grid */
-    display: grid; /* Nested Grid */
+    grid-area: content2;
+    display: grid;
     grid-template-areas: 
         "line1"
         "line2"
@@ -148,12 +147,19 @@ body, html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; 
-    grid-area: frames-container; /* Using CSS grid */
+    grid-area: frames-container;
 }
 
 .frame {
     margin-bottom: 20px;
 }
+
+.frame1 {
+    border-radius: 8px;
+    margin-left: 145px;
+    margin-top: -620px;
+}
+
 
 .frame img {
     width: 100%; 
@@ -187,7 +193,64 @@ body, html {
     padding: 20px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
     grid-row: 2 / 3;
-    height: 100vh; /* Making it full screen height */
+    height: 100vh;
     background-size: cover;
+}
+
+.chart-container {
+    width: 750px; 
+    padding: 90px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-top: 215px;
+    margin-right: 60px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    width: 120px;
+}
+
+.bar-fill {
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.bar .bar-fill {
+    background-color: #0000FF; 
+    margin-left: 10px;
+}
+
+
+.bar:nth-child(2) .bar-fill {
+    background-color: #008000;
+}
+
+.bar:nth-child(3) .bar-fill {
+    background-color: #FFD700;
+}
+
+
+.scale {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
