@@ -5,98 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waterfall Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&family=Pridi:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesss1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Pridi:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="HOME">
-    <div class="container">
-        <div class="navbar">
-            <div class="hamburger">
-                ☰
-            </div>
-            <div class="nav-items">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">RADAR</a>
-                <a href="#">INQUIRE</a>
-                <a href="#">CONTACT</a>
-            </div>
-        </div>
-        <div class="content">
-            <h1>WATERFALL<br>ISN'T RETURN</h1>
-            <button>More Info ></button>
+    
+    <div class="bg">
+        <div class = "container">
+            <header>
+                <nav>
+                    <ul class='nav-bar'>
+                        <input type='checkbox' id='check' />
+                        <span class="menu" data-aos="zoom-in" data-aos-duration="1000">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Radar</a></li>
+                            <li><a href="#">Inquire</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <label for="check" class="close-menu"><i class="fas fa-times" style = "color: #FFF"></i></label>
+                        </span>
+                        <label for="check" class="open-menu"><i class="fas fa-bars" style = "color: #FFF"></i></label>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class = "info-grid">
+                <div class = "info">
+                    <h1 style = "color: #FFF; text-align: center;" data-aos="zoom-in" data-aos-duration="1000">WATERFALL <br>ISN'T RETURN</h1>
+                </div>
+
+                <div class = "info-button" data-aos="fade-right" data-aos-duration="1000"> 
+                    <button style = "padding: 12px 48px; box-shadow: 5px 5px 10px rgba(0 , 0 , 0 , 0.2); background-color: #407AEC; color: #FFF; margin-top: 10px;">MORE INFO ></button>
+                </div>
         </div>
     </div>
-    </div>
-    <div class="about">
-        
-        <div class="frames-container">
-            <div class="frame">
-                <img src="GunProject/GunProject/images/BG2_1.png" alt="Image 1">
-                <button>More Info ></button>
-            </div>
-            <div class="frame">
-                <img src="GunProject/GunProject/images/BG2_2.png" alt="Image 2">
-                <button>More Info ></button>
-            </div>
-            <div class="frame">
-                <img src="GunProject/GunProject/images/BG2_3.png" alt="Image 3">
-                <button>More Info ></button>
-            </div>
-            <div class="frame">
-                <img src="GunProject/GunProject/images/BG2_4.png" alt="Image 4">
-                <button>More Info ></button>
-            </div>
-        </div>
-            <div class="content2">
+       
+    <div class = "bg2">
+        <div class = "container">
+            <div class = "grid-bg2">
+                <div class = "info-bg2" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 style = "text-align: center; font-family: 'Pridi' , sans-serif; color: #FFF; text-shadow: 5px 5px 5px rgba(0 , 0 , 0 , 0.3);">เพราะการช่วยเหลือ<br>ผู้ประสบภัย</h1>
+                </div>
                 
-                <line1>เพราะการช่วยเหลือ<br>ผู้ประสบภัย<br></line1>
-                <line2>----------------------------<br></line2>
-                <line3>คือหน้าที่<br>ของพวกเรา</line3>
+                <div class = "line-bg2" data-aos="zoom-in" data-aos-duration="1000"></div>
+
+                <div class = "info2-bg2" data-aos="fade-left" data-aos-duration="1000">
+                    <h1 style = "text-align: center; font-family: 'Pridi' , sans-serif; color: #13F7DB; text-shadow: 5px 5px 5px rgba(0 , 0 , 0 , 0.3);">คือหน้าที่<br>ของพวกเรา</h1>
+                </div>
+
+                <div class="image1-bg2" data-aos="flip-up" data-aos-duration="1000">
+                    <button style="padding: 8px 40px; box-shadow: 5px 5px 10px rgba(0 , 0 , 0 , 0.2); background-color: #407AEC; color: #FFF; border-radius: 4px; margin-bottom: 10px;">MORE INFO ></button>
+                </div>
+                
+                <div class = "image2-bg2" data-aos="flip-down" data-aos-duration="1000">
+                    <button style="padding: 8px 40px; box-shadow: 5px 5px 10px rgba(0 , 0 , 0 , 0.2); background-color: #407AEC; color: #FFF; border-radius: 4px; margin-bottom: 10px;">MORE INFO ></button>
+                </div>
+
+                <div class="image3-bg2" data-aos="flip-up" data-aos-duration="1000">
+                    <button style="padding: 8px 40px; box-shadow: 5px 5px 10px rgba(0 , 0 , 0 , 0.2); background-color: #407AEC; color: #FFF; border-radius: 4px; margin-bottom: 10px;">MORE INFO ></button>
+                </div>
+                
+                <div class = "image4-bg2" data-aos="flip-down" data-aos-duration="1000">
+                    <button style="padding: 8px 40px; box-shadow: 5px 5px 10px rgba(0 , 0 , 0 , 0.2); background-color: #407AEC; color: #FFF; border-radius: 4px; margin-bottom: 10px;">MORE INFO ></button>
+                </div>
+
             </div>
-    </div> 
-    <div class="about2-content">
-        <div class="chart-container">
-            <h2>5 อันดับจังหวัดที่น้ำท่วมมากที่สุดในไทย (ไร่)</h2>
-            <div class="bar">
-                <label>จ.พระนครศรีอยุธยา</label>
-                <div class="bar-fill" style="width: 70%; background-color: #0000FF;"></div>
+
+            <div class = "grid-bg3" style = "margin-top: 10%;">
+                <div class =  "image-extra" data-aos="zoom-in" data-aos-duration="1000"></div>
+
+                <div class = "image-test">
+                    <div class = "image-grid">
+                        <div class = "text-header"data-aos="zoom-in" data-aos-duration="1000" >
+                            <h4 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">5 อันดับพื้นที่ที่มีน้ำท่วมมากที่สุด (ไร่)</h4>
+                        </div>
+
+                        <div class = "text-main1" data-aos="fade-right" data-aos-duration="1000">
+                            <h6 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">จ.พระนครศรีอยุธยา</h6>
+                        </div>
+
+                        <div class = "text-main2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                            <h6 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">จ.พิจิตร</h6>
+                        </div>
+
+                        <div class = "text-main3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
+                            <h6 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">จ.สุโขทัย</h6>
+                        </div>
+
+                        <div class = "text-main4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                            <h6 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">จ.สุพรรณบุรี</h6>
+                        </div>
+
+                        <div class = "text-main5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250">
+                            <h6 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">จ.นครสวรรค์</h6>
+                        </div>
+                        
+                        <div class = "text-main6" data-aos="zoom-in" data-aos-duration="1000">
+                            <h6 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">0</h6>
+                        </div>
+
+                        <div class = "text-main7" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                            <h6 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">100K</h6>
+                        </div>
+
+                        <div class = "text-main8" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
+                            <h6 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">200K</h6>
+                        </div>
+
+                        <div class = "text-main9" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                            <h6 style = "font-family: 'Pridi' , sans-serif; font-weight: 600;">300K</h6>
+                        </div>
+                        <div class = "image-line"></div>
+
+                        <div class = "rec-1" data-aos="fade-right" data-aos-duration="1000" > </div>
+                        <div class = "rec-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"></div>
+                        <div class = "rec-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150"></div>
+                        <div class = "rec-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"></div>
+                        <div class = "rec-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250"></div>
+                    </div>
+                </div>
             </div>
-            <div class="bar">
-                <label>จ.พิจิตร</label>
-                <div class="bar-fill" style="width: 25%; background-color: #1E90FF;"></div>
-            </div>
-            <div class="bar">
-                <label>จ.สุโขไทย</label>
-                <div class="bar-fill" style="width: 23%; background-color: #20B2AA;"></div>
-            </div>
-            <div class="bar">
-                <label>จ.สุพรรณบุรี</label>
-                <div class="bar-fill" style="width: 18%; background-color: #00FFFF;"></div>
-            </div>
-            <div class="bar">
-                <label>จ.นครสวรรค์</label>
-                <div class="bar-fill" style="width: 15%; background-color: #00CED1;"></div>
-            </div>
-            <div class="scale">
-                <span>0</span>
-                <span>100K</span>
-                <span>200K</span>
-                <span>300K</span>
-            </div>
+
         </div>
-        <div class="frame1">
-            <img src="GunProject\GunProject\images\BG3_1.png" width="650px" height="650px">
-        </div>
-        
     </div>
 
-    <script src="script.js"></script>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 
 </html>
